@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  background-image: url("./assets/bg.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1570px) {
+  body {
+    background-size: cover;
+  }
+}
+.frame {
+  background-image: linear-gradient(
+    45deg,
+    #ffffff00 25%,
+    #70536f 25%,
+    #70536f 50%,
+    #ffffff00 50%,
+    #ffffff00 75%,
+    #70536f 75%,
+    #70536f 100%
+  );
+  background-size: 22.63px 22.63px;
+}
+.pic {
+  background-image: url("./assets/lol1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tl-border {
+  box-shadow: -10px -11px 16px -6px #ff634890;
+  -webkit-box-shadow: -10px -11px 16px -6px #ff634890;
+  -moz-box-shadow: -10px -11px 16px -6px #ff634890;
+}
+.tr-border {
+  box-shadow: 10px -11px 16px -6px #ff634890;
+  -webkit-box-shadow: 10px -11px 16px -6px #ff634890;
+  -moz-box-shadow: 10px -11px 16px -6px #ff634890;
+}
+.br-border {
+  box-shadow: 12px 12px 16px -6px #ff634890;
+  -webkit-box-shadow: 12px 12px 16px -6px #ff634890;
+  -moz-box-shadow: 12px 12px 16px -6px #ff634890;
+}
+.bl-border {
+  box-shadow: -12px 9px 16px -6px #ff634890;
+  -webkit-box-shadow: -12px 9px 16px -6px #ff634890;
+  -moz-box-shadow: -12px 9px 16px -6px #ff634890;
+}
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+.gallery {
+}
+
+/* //////////////////////////// */
+.project-row {
+  min-height: 60%;
+  height: auto;
+}
+.project-row:hover {
+}
+
+/* //////////////////////////////////// */
+
+.project {
+  background-position: center;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+@media (max-width: 994px) {
+  .project {
+    height: 300px;
+  }
+}
+.project-1 {
+  background-image: url("./assets/1.jpg");
+}
+.project-2 {
+  background-image: url("./assets/2.jpg");
+}
+.project-3 {
+  background-image: url("./assets/3.jpg");
+}
+.project-4 {
+  background-image: url("./assets/1.jpg");
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.logo:hover {
+  scale: 120%;
+  cursor: pointer;
+}
+.linkedin {
+  background-image: url("./assets/LinkedIn.png");
+}
+.behance {
+  background-image: url("./assets/behance.png");
+}
+.github {
+  background-image: url("./assets/github.png");
+}
+
+.open-btn:hover {
+  text-decoration: none;
+  filter: brightness(120%);
+}
+.textarea {
+  max-height: 5rem;
+}
+
+.home-number:hover {
+  scale: 110%;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+$d: 50; // density
+$w: 300; // grid size
+$s: 6s; // speed
+
+// Generate the snow image using radial gradients
+$grad: ();
+@for $i from 0 to $d {
+  $v: random(4) + 1;
+  $a: random(5) * 0.1 + 5;
+  $grad: $grad,
+    radial-gradient(
+      $v +
+        px
+        $v +
+        px
+        at
+        (random($w - $v * 2) + $v) +
+        px
+        (random($w - $v * 2) + $v) +
+        px,
+      rgba(255, 255, 255, $a) 50%,
+      rgba(0, 0, 0, 0)
+    ) !global;
+}
+
+// The CSS
+
+.snow,
+.snow:before,
+.snow:after {
+  align-items: center;
+  position: absolute;
+  top: -$w + px;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  background-image: $grad;
+  background-size: $w + px $w + px;
+  animation: snow $s linear infinite;
+  content: "";
+}
+// .snow:after {
+//   margin-left: -$w/3 + px;
+//   opacity: 0.4;
+//   animation-duration: $s * 2;
+//   animation-direction: reverse;
+//   filter: blur(3px);
+// }
+// .snow:before {
+//   animation-duration: $s * 3;
+//   animation-direction: reverse;
+//   margin-left: -$w/2 + px;
+//   opacity: 0.65;
+//   filter: blur(1.5px);
+// }
+@keyframes snow {
+  to {
+    transform: translateY($w + px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.snowFlake {
+  background-image: url("./assets/snowflake.webp");
+  background-position: center;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: rotate 20s linear infinite;
+}
+
+.active {
+  color: #c406c7;
+}
