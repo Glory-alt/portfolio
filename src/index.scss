@@ -23,7 +23,7 @@
 }
 
 body {
-  background-image: url("./assets/bg.png");
+  background-image: url("./assets/bg.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -230,4 +230,23 @@ $grad: ();
 
 .active {
   color: #c406c7;
+}
+
+.graphic-1 {
+  background-image: url("./assets/graphic/1.jpg");
+}
+.graphic-2 {
+  background-image: url("./assets/graphic/2.jpg");
+}
+.graphic-3 {
+  background-image: url("./assets/graphic/3.jpg");
+}
+.graphic-4 {
+  background-image: url("./assets/graphic/4.jpg");
+}
+.graphic-5 {
+  background-image: url("./assets/graphic/5.jpg");
+}
+.graphic-6 {
+  background-image: url("./assets/graphic/6.jpg");
 }

@@ -95,7 +95,7 @@ function Home() {
       </motion.div>
       {/*//////////////////////////////////// SNOW FLAKE //////////////////////////////////*/}
       <div
-        className=" w-32 h-32 absolute top-[3%] right-[10%] cursor-pointer rounded-full flex justify-center  hover:scale-105"
+        className=" w-32 h-32 absolute top-[3%] right-[10%] cursor-pointer rounded-full flex justify-center  transform transition duration-1000 hover:scale-110"
         whileTap={{ scale: 0.5 }}
         onClick={() => navigate("/contact")}
       >
