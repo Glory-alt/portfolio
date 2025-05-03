@@ -89,10 +89,10 @@ function Contact() {
     setLoading(true);
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_KEYS,
-        import.meta.env.VITE_TEMPLATE,
+        "service_eivor2g",
+        "template_svt0qxr",
         form.current,
-        import.meta.env.VITE_TOKEN
+        "a4MTJVkL57gS0Qqha"
       )
       .then(
         (result) => {
