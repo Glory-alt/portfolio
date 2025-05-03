@@ -162,10 +162,10 @@ function Tab2() {
   return (
     <motion.div className="pb-16 w-full ">
       <motion.div className="row justify-center project-row ">
-        <div className="row justify-center  project-row  gap-0 px-0">
+        <div className="row justify-center  project-row  gap-0 pl-3 pr-5">
           <a
             href="https://www.behance.net/gallery/180737065/NeuraPulse/modules/1020930917"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -173,7 +173,7 @@ function Tab2() {
           </a>
           <a
             href="https://www.behance.net/gallery/126775181/_/modules/719405351"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -181,17 +181,17 @@ function Tab2() {
           </a>
           <a
             href="https://www.behance.net/gallery/126775075/_/modules/719404703"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >
             <div className=" project graphic-3 rounded-md h-64 mx-0 transform transition duration-300 hover:scale-105 hover:brightness-110 filter"></div>
           </a>
         </div>
-        <div className="row justify-center  project-row  gap-0 px-0">
+        <div className="row justify-center  project-row  gap-0 pl-3 pr-5">
           <a
             href="https://www.behance.net/gallery/126774771/Sky-medical-team/modules/719403289"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -199,7 +199,7 @@ function Tab2() {
           </a>
           <a
             href="https://www.behance.net/gallery/126775495/Delux-Chocolate/modules/719407145"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -207,7 +207,7 @@ function Tab2() {
           </a>
           <a
             href="https://www.behance.net/gallery/126775337/_/modules/719406195"
-            className="py-3 col-12 w-[31%]"
+            className="py-3 col-12 col-md-4"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -57,20 +57,12 @@ function Home() {
         </div>
         <div className="col-lg col-7 pt-[20%] h-full flex justify-center gap-6 lg:mr-10">
           <motion.a
-            className="logo linkedin relative lg:left-[10%] top-[] w-14 h-14 shadow-xl shadow-black"
-            initial={{ opacity: "0%", scale: "150%%" }}
-            animate={{ opacity: "100%", scale: "100%" }}
-            exit={{ opacity: "0%", scale: "150%" }}
-            transition={{ duration: 1, type: "spring" }}
+            className="logo linkedin relative lg:left-[10%] top-[] w-14 h-14 shadow-xl shadow-black transform transition duration-200 hover:scale-110"
             href="https://www.linkedin.com/in/almajd-shahin/"
             target="_blank"
           ></motion.a>
           <motion.a
-            className="logo behance relative lg:left-[5%] lg:top-[40%] w-14 h-14 shadow-xl shadow-black rounded-full"
-            initial={{ opacity: "0%", scale: "150%%" }}
-            animate={{ opacity: "100%", scale: "100%" }}
-            exit={{ opacity: "0%", scale: "150%" }}
-            transition={{ duration: 1.4, type: "spring" }}
+            className="logo behance relative lg:left-[5%] lg:top-[40%] w-14 h-14 shadow-xl shadow-black rounded-full transform transition duration-200 hover:scale-110"
             href="https://www.behance.net/TheGlory"
             target="_blank"
           ></motion.a>
@@ -95,7 +87,7 @@ function Home() {
       </motion.div>
       {/*//////////////////////////////////// SNOW FLAKE //////////////////////////////////*/}
       <div
-        className=" w-32 h-32 absolute top-[3%] right-[10%] cursor-pointer rounded-full flex justify-center  transform transition duration-1000 hover:scale-110"
+        className=" w-32 h-32 absolute top-[3%] right-[10%] cursor-pointer rounded-full flex justify-center  transform transition duration-700 hover:scale-110"
         whileTap={{ scale: 0.5 }}
         onClick={() => navigate("/contact")}
       >
